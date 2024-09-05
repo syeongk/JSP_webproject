@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.empty-lec-div{
+	width:100%;
+	margin-top:30px;
+}
+
+.empty-lec-p{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+	height:50px;
+	background-color:#ff8c8c;
+	color:white;
+	
+	border-radius:10px;
+}
+
+.lec-header{
+	width:100%;
+	
+	color:#5fc703;
+	padding:10px 30px 0px 30px;
+	
+	box-sizing:border-box;
+}
+
+.box{
+	background:#DCF0D2;
+	width:100%;
+	height:100%;
+	text-align:center; 
+	aspect-ratio:1/1;
+}
+
+.nolec-container{
+	width:50%;
+	
+	border:1px solid #5fc703;
+	border-radius:10px;
+	background-color:#deefd6;
+	margin:0 25% 0 25%;
+}
+
+.lecture{
+	background:white;
+	width:95%;
+	height:75%;
+	margin:auto;
+	margin-top:2%;
+	margin-bottom:20%;
+	
+}
+
+.lec-row{
+	max-width:1450px;
+	flex-wrap: wrap;
+}
+
+.lec-a{
+	width:31%;
+	margin:1% 1%;
+	border:1px solid #5fc703;
+	border-radius:10px;
+	background-color:#deefd6;
+}
+
+.lec-col{
+	width:100%;
+	padding:10px;
+}
+
+.lec-body{
+	padding:10px;
+}
+
+.lec-title{
+	margin:0px 0px 5px 0px;
+	font-size:20px;
+	color:#01bd00;
+}
+
+.lec-text{
+	color:#01bd00;
+}
+
+.lec-name-price{
+	display:flex;
+	justify-content:space-between;
+	color:#01bd00;
+}
+
+.lec-footer{
+	display:flex;
+	justify-content:flex-end;
+	color:#01bd00;
+	overflow:hidden;
+}
+
+.badge{
+	--bs-badge-padding-x: 0.65em;
+    --bs-badge-padding-y: 0.35em;
+    --bs-badge-font-size: 0.75em;
+    --bs-badge-font-weight: 700;
+    --bs-badge-color: #fff;
+    --bs-badge-border-radius: var(--bs-border-radius);
+    display: inline-block;
+    padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+    margin: 2px;
+    font-size: var(--bs-badge-font-size);
+    font-weight: var(--bs-badge-font-weight);
+    line-height: 1;
+    color: var(--bs-badge-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 7px;
+    
+    --bs-bg-opacity: 1;
+}
+
+.bg-primary{
+	background-color:#0d6efd;
+}
+.bg-secondary{
+	background-color:#6c757d;
+}
+.bg-success{
+	background-color:#198754;
+}

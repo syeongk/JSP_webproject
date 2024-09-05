@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+.container.table-container{
+	min-height: 550px;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+}
+
+.noticeBoard{
+	display:flex;
+	justify-content:center;
+	width:70%;
+	border-top:1px solid #5fc703;
+	border-bottom:1px solid #5fc703;
+}
+
+.board-top{
+	display:flex; 
+	position: relative; 
+	color:#5fc703;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.createpost-div{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:14%;
+	height:100%;
+}
+.createpost{
+	position: absolute;
+	font-size:14px;
+	font-weight: bolder;
+	border:1px solid #5fc703;
+	color:#5fc703;
+	border-radius:5px;
+	padding:3px;
+	
+	background-color:#e9f4e3;
+}
+.createpost:hover{
+	cursor:pointer;
+}
+
+
+.board-table{
+	display:flex;
+	flex-direction:column;
+	width:90%;
+}
+
+.table-row{
+	display:flex;
+	
+	width:100%;
+	height:40px;
+	color:#5fc703;
+}
+
+.table-col{
+	display:flex;
+	align-items:center;
+	background-color:#d9ecce;
+	border-bottom:2px solid #cfe7c3;
+	
+	border-top:2px solid #cfe7c3;
+	
+	overflow:hidden;
+}
+
+.board-article{
+	display:block;
+	padding-left:10px;
+	color:#5fc703;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align:left;
+	overflow:hidden;
+	
+	font-size:inherit;
+}
+.board-article:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.board-name{
+	display:flex;
+	justify-content: flex-start;
+	color:#5fc703;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align:left;
+	overflow:hidden;
+}
+.board-name:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.board-date{
+	display:flex;
+	justify-content: flex-start;
+	align-items:center;
+	color:#5fc703;
+	margin:0px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden;
+}
+
+.table-col.article{
+	width:70%;
+	border-radius:5px 0px 0px 5px;
+}
+.table-col.name{
+	width:15%;
+	padding-left:10px;
+}
+.table-col.date{
+	width:15%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:0px 5px 5px 0px;
+}
+
+.search-div{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:70%;
+	
+	margin-top:15px;
+}
+
+.search-input{
+	width:80%;
+	height:35px;
+	
+	padding:0px 10px 0px 10px;
+	
+	border:1px solid #5fc703;
+	border-radius:10px; 
+	
+	box-sizing:border-box;
+}
+.search-button{
+	width:10%;
+	height:35px;
+
+	color:#5fc703;
+	background-color:white;
+
+	margin:0px 0px 0px 10px;
+	
+	border:1px solid #5fc703;
+	border-radius:10px;	
+}
+
