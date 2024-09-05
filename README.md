@@ -18,7 +18,7 @@
   - 장바구니
   - 결제<br>
   
-**[3. 관리자 페이지 전반](https://github.com/syeongk/JSP_webproject/tree/main/src/main/webapp/adminPage)**
+**[3. 관리자 페이지](https://github.com/syeongk/JSP_webproject/tree/main/src/main/webapp/adminPage)**
   - 관리자 로그인
   - 강의 CRUD<br>
 
