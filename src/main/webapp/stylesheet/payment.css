@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.pay-container {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width: 70%;
+	background-color: #deefd6;
+	margin-top: 225px !important;
+	border: 1px solid #5fc703;
+	border-radius: 10px;
+	
+	padding:50px 0px 100px 0px;;
+}
+
+.pay-title {
+	font-weight: bold;
+	font-size: 40px;
+	color: #5fc703;
+	margin: 50px 0px;
+}
+
+.pay-form {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.info-div {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label {
+	margin: 15px 5px 10px 5px;
+}
+
+.form-input {
+	width: 100%;
+	height: 25px;
+	padding: 17px 10px;
+	border: 1px solid #5fc703;
+	border-radius: 10px;
+	color: #5fc703;
+	box-sizing: border-box;
+}
+
+.pay-way {
+	margin: 15px 0px;
+}
+
+.form-select{
+	display:block;
+}
+
+.form-check-input {
+	display: inline-block;
+}
+
+.pay-button{
+	width:100%;
+	height:35px;
+	color:#5fc703;
+	background-color:white;
+	border:1px solid #5fc703;
+	border-radius:10px;
+	cursor:pointer; 
+	
+	margin-top:10px;
+	
+	font-size:15px;
+}
+
+input[type="text"]:focus{
+	outline: 4px solid #5fc70340;
+}

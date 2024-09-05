@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+.regi-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.register-modal {
+	width:400px;
+	height:600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.close {
+    position:absolute;
+    top:10px;
+    right:10px;
+    left:10px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.regi-out{
+	width:400px;
+	min-height:600px;
+	max-height:80%;
+	display:flex;
+	border:1px solid #5fc703;
+	border-radius:10px;
+	justify-content:center;
+	align-items:center;
+	background:#e0f0d9;
+}
+
+.regi-in{
+	color:#5fc703;
+	width:100%;
+	height:80%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.regi-form{
+	width:70%;
+	height:475px;
+	text-align:center;
+}
+
+
+
+
+.input-div{
+	width:100%;
+	height:35px;
+	border:1px solid #5fc703;
+	background-color:#fff;
+	display:flex;
+	justify-content:center;
+}
+
+.input{
+	padding-left:5px;
+	width:90%;
+	border:0px;
+	background-color:#fff;
+	color:#5fc703;
+}
+input::placeholder{
+	color:#cfe7c3;
+}
+
+.id-div{
+	margin-top:50px;
+	border-radius:7px 7px 0px 0px;
+	border-bottom:0px;
+}
+
+.passwd-div{
+	border-radius:0px 0px 7px 7px;
+	border-top:0px;
+	margin-bottom:7px;
+}
+
+.name-div{
+	border-radius:7px 7px 0px 0px;
+	border-bottom:0px;
+	margin-top:10px;
+}
+
+.phone-div{
+	border-bottom:0px;
+	border-top:0px;
+}
+
+.email-div{
+	border-radius:0px 0px 7px 7px;
+	border-top:0px;
+	margin-bottom:7px;
+}
+
+.id{
+	border-bottom:1px solid #cce7c0;
+}
+
+.regi_name{
+	border-bottom:1px solid #cce7c0;
+}
+
+.phone{
+	border-bottom:1px solid #cce7c0;
+}
+
+.register_button{
+	margin-top:60px;
+	width:100%;
+	height:40px;
+	color:#5fc703;
+	background-color:white;
+	border:1px solid #5fc703;
+	border-radius:10px;
+	cursor:pointer; 
+}
+
+#regi_errorMessage1{
+	height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#regi_errorMessage2{
+	height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#regi_errors{
+	display:none;
+	flex-direction:column;
+	align-items:center;
+	height:70px;
+}

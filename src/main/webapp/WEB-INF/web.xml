@@ -1,0 +1,75 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="6.0">
+	<filter>
+	    <filter-name>Viewpoint</filter-name>
+	    <filter-class>filter.ViewPoint</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>Viewpoint</filter-name>
+	    <url-pattern>/post/post.jsp</url-pattern>
+	</filter-mapping>
+	<filter>
+	    <filter-name>LecCookie</filter-name>
+	    <filter-class>filter.LecCookie</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>LecCookie</filter-name>
+	    <url-pattern>/lectures/lec.jsp</url-pattern>
+	</filter-mapping>
+	
+	
+    <servlet>
+        <servlet-name>MemberServlet</servlet-name>
+        <servlet-class>servlet.MemberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MemberServlet</servlet-name>
+        <url-pattern>*.member</url-pattern>
+    </servlet-mapping>
+        
+    <servlet>
+		<servlet-name>PostServlet</servlet-name>
+		<servlet-class>servlet.PostServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostServlet</servlet-name>
+		<url-pattern>*.post</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CommentServlet</servlet-name>
+		<servlet-class>servlet.CommentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CommentServlet</servlet-name>
+		<url-pattern>*.comment</url-pattern>
+	</servlet-mapping>
+	
+
+    <security-role>
+        <role-name>admin</role-name>
+    </security-role>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>CodeOn</web-resource-name>
+            <url-pattern>/adminPage/administration.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/adminPage/loginAdmin.jsp</form-login-page>
+            <form-error-page>/adminPage/loginAdmin_fail.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+        <param-value>bundle.message</param-value>
+    </context-param>
+
+</web-app>
