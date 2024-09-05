@@ -20,7 +20,7 @@
   
 **[3. 관리자 페이지 전반](https://github.com/syeongk/JSP_webproject/tree/main/src/main/webapp/adminPage)**
   - 관리자 로그인
-  - 강의 CRUD
+  - 강의 CRUD<br>
 
 
 ## 시연 영상
