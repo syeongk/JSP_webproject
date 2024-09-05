@@ -13,3 +13,8 @@
 - 장바구니
 - 결제
 - 관리자 페이지 전반
+
+
+## 시연 영상
+https://github.com/user-attachments/assets/f5a368b2-0649-4022-9d0c-fc8f54399daf
+
